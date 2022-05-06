@@ -1,0 +1,217 @@
+body {
+  background-image: url('../img/bg-doggy.jpg');
+}
+
+/* NAVIGATION */
+.nav-item {
+  margin-left: 25px;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+/* INDEX.PHP */
+.welcome {
+  background-image: url('../img/bg-welcome.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+.welcome-left-bg {
+  width: 50%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
+
+.welcome-left-content {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.welcome-left-content-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.username {
+  color: rgb(137,203,197);
+}
+
+.welcome-left-content-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.welcome-left-content-buttons button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.welcome-left-content-buttons button, .dropdown {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.welcome-left-content-buttons button:hover {
+  background-color: rgb(92,99,106);
+  color: #fff;
+  transition: .4s;
+}
+
+/* SIGNIN */
+.top-right-message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+}
+
+.form-box {
+  width: 320px;
+  height: 500px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.form-box img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.form-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.form-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.form-box input {
+  margin-bottom: 20px;
+}
+
+.form-box input[type="email"],
+.form-box input[type="text"],
+.form-box input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-box .checkbox-label {
+  font-weight: normal;
+}
+
+.form-buttons {
+  margin-bottom: 20px;
+}
+
+.form-box button {
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.form-box button[type="submit"]{
+  background: rgb(21,125,195);
+}
+
+.form-box button[type="reset"]{
+  background: #ff1a1a;
+}
+
+.form-box button[type="submit"]:hover{
+  background-color: #0000ff;
+  transition: .8s;
+}
+
+.form-box button[type="reset"]:hover{
+  background: #b30000;
+  transition: .8s;
+}
+
+.form-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.form-box a:hover {
+  color: #fff;
+}
+
+/* SIGNUP */
+#signup-form {
+  height: 610px;
+}
+
+#signup-img {
+  top: -40px;
+  left: calc(50% - 50px);
+  height: 110px;
+}
+
+.home-icon {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.home-icon i {
+  color: #000;
+  float: left;
+}
+
+.home-icon i:hover {
+  color: rgb(21,125,195);
+  transition: .8s;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 700px){
+  .welcome-left-content, .welcome-left-bg {
+    width: 100%;
+  }
+}
